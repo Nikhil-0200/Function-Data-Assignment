@@ -1,21 +1,18 @@
-function checkPrime(Num){
+function checkPrime(Num) {
+  let isPrime = true;
 
-    let isPrime = true;
+  if (Num < 2) {
+    isPrime = false;
+  }
 
-    if(Num < 2){
-        isPrime = false
+  for (let i = 2; i < Num; i++) {
+    if (Num % i === 0) {
+      isPrime = false;
+      break;
     }
+  }
 
-    for(let i=2; i < Num; i++){
-        if(Num % i === 0){
-            isPrime = false
-            break;
-        }
-    }
-
-   return isPrime;
+  return isPrime;
 }
-
-
 
 export default checkPrime;
