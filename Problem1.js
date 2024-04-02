@@ -13,16 +13,9 @@ function checkPrime(Num){
         }
     }
 
-    if(isPrime){
-        return `${Num} is a Prime Number`
-    }
-    else{
-        return `${Num} is not a Prime Number`
-    }
-
+   return isPrime;
 }
 
-console.log(checkPrime(12))
-console.log(checkPrime(11))
-console.log(checkPrime(77))
-console.log(checkPrime(13))
+
+
+export default checkPrime;
